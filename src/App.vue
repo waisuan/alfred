@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <b-navbar type="light" variant="faded">
+      <b-navbar-brand>Who is on-call?</b-navbar-brand>
+    </b-navbar>
     <Alfred/>
   </div>
 </template>
@@ -16,13 +19,9 @@ export default {
 </script>
 
 <style>
+@import "https://csshake.surge.sh/csshake.min.css";
+
 #app {
-  /* font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50; */
-  /* margin-top: 60px; */
-  margin: 20px;
+  margin: 5px;
 }
 </style>

@@ -5,6 +5,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VCalendar from 'v-calendar'
 import fullCalendar from 'vue-fullcalendar'
+import VueNativeSock from 'vue-native-websocket'
+
+Vue.use(VueNativeSock, 'ws://localhost:8080/alfred-api/event/websocket', {format: 'json'})
 
 Vue.component('full-calendar', fullCalendar)
 Vue.config.productionTip = false
